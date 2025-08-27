@@ -116,9 +116,13 @@ REACT : Advanced frontend technology
     - Steps to set up path/router/url for component
         1. Render the entire react app inside "BrowserRouter" component of react-router-dom library, provide this step inside main.jsx file
         2. Inorder to set up path for component, make sure each component must be inside "Routes" component of react-router-dom library, provide this step inside App.jsx file.
-        3. To set up path for component, use "Route" component of react-router-dom library. Route component has attributes like "path" and "element" inorder to setup route for component. All route component must be inside Route component
+        3. To set up path for component, use "Route" component of react-router-dom library. Route component has attributes like "path" and "element" inorder to setup route for component. All route component must be inside Route component.
+        4. To set dynamic value in a URL use symbol : , eg. /:id/
+        5. To set page not found use symbol * , eg. /*
+
     - link : tag is used to link to different pages in a project using React-router-dom.
-      - "to" : Attribute used to give the path to pages.
+        - "to" : Attribute used to give the path to pages.
+
 15. Icons - react icons : https://react-icons.github.io/react-icons/
 
 16. CORS- Cross-Origin Resource Sharing, is a browser security feature that restricts web pages from making requests to a different domain than the one that served the page.
