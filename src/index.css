@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+*{
+  font-family: "solway",serif;;
+}
+
+body{
+  background-color: beige;
+}
