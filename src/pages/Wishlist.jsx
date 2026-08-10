@@ -7,7 +7,7 @@ const Wishlist = () => {
     <Header/>
 
     <div style={{paddingTop:"100px"}} className="px-5">
-      <>
+      
       <h1 className="text-4xl font-bold text-red-600 text-center mb-5">My Wishlist</h1>
 
       <div className="grid grid-cols-4 gap-4">
@@ -23,7 +23,7 @@ const Wishlist = () => {
 
           </div>
       </div>
-      </>
+      
     </div>
     </>
   )

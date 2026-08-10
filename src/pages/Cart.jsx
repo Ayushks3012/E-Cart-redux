@@ -1,8 +1,54 @@
 import React from 'react'
+import Header from '../components/Header'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <>
+      <Header/>
+
+      <div style={{paddingTop:"100px"}} className="0x-5">
+        <>
+        <h1 className='text-5xl font-bold text-black text-center'><span className='animate-pulse'>🫵</span>Cart Summary..</h1>
+        <div className="grid grid-cols-3 gap-4 mt-5">
+          <div className='col-span-2 border rounded p-5 shadow'>
+            <table className="table-auto text-lg w-full">
+              <thead>
+                <tr>
+                  <td className='font-semibold'>#</td>
+                  <td className='font-semibold'>Name</td>
+                  <td className='font-semibold'>Image</td>
+                  <td className='font-semibold'>Quantity</td>
+                  <td className='font-semibold'>Price</td>
+                  <td className='font-semibold'>...</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Product Name</td>
+                  <td><img width={'70px'} height={'70px'} src="https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp" alt="" /></td>
+                  <td>
+                    <div className="flex">
+                      <button className='font-bold'>-</button>
+                      <input style={{width:"40px"}} type="text" className='border p-1 rounded mx-2 text-center' value={12} readOnly/>
+                      <button className="font-bold">+</button>
+                    </div>
+                  </td>
+                  <td>$ 250</td>
+                  <td><button className='text-red-700 hover:text-red-800'><i className='fa-solid fa-trash'></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+            <div className='float-right mt-5'>
+              <button className='bg-red-700 text-white p-2 rounded hover:bg-red-800 mr-5'>Empty Cart</button>
+              <Link to={'/'} className='bg-blue-700 ms-5 rounded p-2 text-white hover:bg-blue-800'>Shop More</Link>
+            </div>
+          </div>
+        </div>
+        </>
+      </div>
+    </>
   )
 }
 

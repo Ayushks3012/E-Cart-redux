@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <Header />
 
-      <div style={{paddingTop:"100px",backgroundColor:"beige"}} className='container px-4 mx-auto'>
+      <div style={{paddingTop:"100px"}} className='container px-4 mx-auto'>
         <div className="grid grid-cols-4 gap-4">
           <div className="rounded border border-red-800 p-2 shadow shadow-red-800">
             <img width={'100%'} height={'200px'} src="https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp" alt="" />
