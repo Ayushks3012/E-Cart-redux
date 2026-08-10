@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../components/Header'
 import { Link } from 'react-router-dom'
 
@@ -7,7 +6,7 @@ const Cart = () => {
     <>
       <Header/>
 
-      <div style={{paddingTop:"100px"}} className="0x-5">
+      <div style={{paddingTop:"100px"}} className="px-5">
         <>
         <h1 className='text-5xl font-bold text-black text-center'><span className='animate-pulse'>🫵</span>Cart Summary..</h1>
         <div className="grid grid-cols-3 gap-4 mt-5">
@@ -44,6 +43,14 @@ const Cart = () => {
               <button className='bg-red-700 text-white p-2 rounded hover:bg-red-800 mr-5'>Empty Cart</button>
               <Link to={'/'} className='bg-blue-700 ms-5 rounded p-2 text-white hover:bg-blue-800'>Shop More</Link>
             </div>
+          </div>
+          <div className='col-span-1'>
+            <div className="border rounded shadow p-5">
+              <h2 className='text-2xl font-bold'>Total Amount: <span className='text-red-700'>$ 250</span></h2>
+              <hr />
+              <button className='bg-green-700 rounded p-2 text-white w-full mt-4'>Check Out</button>
+            </div>
+
           </div>
         </div>
         </>
