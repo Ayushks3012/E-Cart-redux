@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div
       style={{ height: "250px", marginTop: "100px" }}
-      className="mt-5 w-full bg-blue-400 text-white p-4"
+      className="mt-5 w-full bg-red-800 text-white p-4"
     >
       <div className="flex justify-between p-4">
         <div style={{ width: "400px" }} className="intro">
